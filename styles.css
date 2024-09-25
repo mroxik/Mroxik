@@ -6,8 +6,9 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Estilo del encabezado */
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -15,6 +16,21 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 3em;
+    animation: blink 1s infinite; /* Efecto de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 nav ul {
@@ -32,6 +48,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Estilos de la sección de posts */
 section#posts {
     padding: 20px;
 }
